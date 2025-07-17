@@ -1,0 +1,8 @@
+{
+  "name": "webapp-security-test-app",
+  "version": "1.0.0",
+  "description": "Test repo with a vulnerable dependency",
+  "dependencies": {
+    "lodash": "4.17.4"
+  }
+}
