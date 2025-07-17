@@ -1,0 +1,14 @@
+# Attempting to re-enable security updates via config file.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # This rule specifically targets security updates.
+    # If a PR is created, the bypass is successful.
+    groups:
+      malicious-group:
+        applies-to: "security-updates"
+        patterns:
+          - "lodash"
